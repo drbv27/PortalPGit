@@ -55,6 +55,7 @@ function mostrarOpcion(e) {
 
 function menuC() {
     console.log('menu aa');
+    limpiarHTML();
     const dropdown1 = document.createElement('div');
     dropdown1.classList.add('dropdown','mx-auto');
 
@@ -114,6 +115,7 @@ function menuC() {
 
 function menuA() {
     console.log('menu cursos')
+    limpiarHTML();
     const titulo = document.createElement('h1');
     titulo.textContent = 'Afiliaciones Antioquia';
 
@@ -170,10 +172,12 @@ function menuA() {
     body.appendChild(r3);
     tabla.appendChild(head);
     tabla.appendChild(body);
+    resultadin.classList.remove('custom-centered')
     resultadin.appendChild(titulo);
     resultadin.appendChild(tabla);
+    
 
-    console.log(tabla);
+    console.log(resultadin);
 
 }
 
@@ -182,6 +186,15 @@ function menuA() {
 function menuB() {
     console.log('menu ab')
 }
+
+
+function limpiarHTML() {
+  while(resultadin.firstChild) {
+      resultadin.removeChild(resultadin.firstChild);
+  }
+}
+
+
 /* let subjectObject = {
     "Cursos": {
       "Atencion y Servicio al Cliente": ["Afiliado", "No afiliado"],
