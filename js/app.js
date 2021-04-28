@@ -144,6 +144,7 @@ function menuA() {
     valor1.textContent = '$50.000';
     const pagar1 = document.createElement('td');
     const link1 = document.createElement('a');
+    link1.classList.add('font-weight-bold');
     link1.textContent = 'Pagar';
     link1.href = 'https://biz.payulatam.com/L0ca7119EE68F4F';
     pagar1.appendChild(link1);
@@ -158,6 +159,7 @@ function menuA() {
     valor2.textContent = '$300.000';
     const pagar2 = document.createElement('td');
     const link2 = document.createElement('a');
+    link2.classList.add('font-weight-bold');
     link2.textContent = 'Pagar';
     link2.href = 'https://biz.payulatam.com/L0ca7113AEFA653';
     pagar2.appendChild(link2);
@@ -165,11 +167,89 @@ function menuA() {
     r3.appendChild(valor2);
     r3.appendChild(pagar2);
 
+    const r4 = document.createElement('tr');
+    const modalidad3 = document.createElement('td');
+    modalidad3.textContent = 'Pago Anual - Tarifa año 2021 Cuota de Sostenimiento Fendipetroleo Dependencia Antioquia y Choco, EDS con ventas mensuales inferiores a 10.000 Galones';
+    const valor3 = document.createElement('td');
+    valor3.textContent = '$600.000';
+    const pagar3 = document.createElement('td');
+    const link3 = document.createElement('a');
+    link3.classList.add('font-weight-bold');
+    link3.textContent = 'Pagar';
+    link3.href = 'https://biz.payulatam.com/L0ca711C5DE161F';
+    pagar3.appendChild(link3);
+    r4.appendChild(modalidad3);
+    r4.appendChild(valor3);
+    r4.appendChild(pagar3);
 
+    const r5 = document.createElement('tr');
+    const modalidad4 = document.createElement('td');
+    modalidad4.textContent = 'Pago Mensual - Tarifa año 2021 Cuota de Sostenimiento Fendipetroleo Dependencia Antioquia y Choco.';
+    const valor4 = document.createElement('td');
+    valor4.textContent = '$100.000';
+    const pagar4 = document.createElement('td');
+    const link4 = document.createElement('a');
+    link4.classList.add('font-weight-bold');
+    link4.textContent = 'Pagar';
+    link4.href = 'https://biz.payulatam.com/L0ca7116A5186B9';
+    pagar4.appendChild(link4);
+    r5.appendChild(modalidad4);
+    r5.appendChild(valor4);
+    r5.appendChild(pagar4);
+
+    const r6 = document.createElement('tr');
+    const modalidad5 = document.createElement('td');
+    modalidad5.textContent = 'Pago Mensual Descuento por Grupos 15% (2EDS) - Tarifa año 2021 Cuota de Sostenimiento Fendipetroleo Dependencia Antioquia y Choco.';
+    const valor5 = document.createElement('td');
+    valor5.textContent = '$170.000';
+    const pagar5 = document.createElement('td');
+    const link5 = document.createElement('a');
+    link5.classList.add('font-weight-bold');
+    link5.textContent = 'Pagar';
+    link5.href = 'https://biz.payulatam.com/L0ca7119F64C186';
+    pagar5.appendChild(link5);
+    r6.appendChild(modalidad5);
+    r6.appendChild(valor5);
+    r6.appendChild(pagar5);
+
+    const r7 = document.createElement('tr');
+    const modalidad6 = document.createElement('td');
+    modalidad6.textContent = ' Pago Mensual Descuento por Grupos 15% (3EDS) - Cuota de Sostenimiento Fendipetroleo Dependencia Antioquia y Choco.';
+    const valor6 = document.createElement('td');
+    valor6.textContent = '$255.000';
+    const pagar6 = document.createElement('td');
+    const link6 = document.createElement('a');
+    link6.classList.add('font-weight-bold');
+    link6.textContent = 'Pagar';
+    link6.href = 'https://biz.payulatam.com/L0ca7114D1300E5';
+    pagar6.appendChild(link6);
+    r7.appendChild(modalidad6);
+    r7.appendChild(valor6);
+    r7.appendChild(pagar6);
+
+    const r8 = document.createElement('tr');
+    const modalidad7 = document.createElement('td');
+    modalidad7.textContent = '  Pago Semestral - Tarifa año 2021 Cuota de Sostenimiento Fendipetroleo Dependencia Antioquia y Choco.';
+    const valor7 = document.createElement('td');
+    valor7.textContent = '$500.000';
+    const pagar7 = document.createElement('td');
+    const link7 = document.createElement('a');
+    link7.classList.add('font-weight-bold');
+    link7.textContent = 'Pagar';
+    link7.href = 'https://biz.payulatam.com/L0ca7118A700626';
+    pagar7.appendChild(link7);
+    r8.appendChild(modalidad7);
+    r8.appendChild(valor7);
+    r8.appendChild(pagar7);   
 
     head.appendChild(r1);
     body.appendChild(r2);
     body.appendChild(r3);
+    body.appendChild(r4);
+    body.appendChild(r5);
+    body.appendChild(r6);
+    body.appendChild(r7);
+    body.appendChild(r8);
     tabla.appendChild(head);
     tabla.appendChild(body);
     resultadin.classList.remove('custom-centered')
