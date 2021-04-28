@@ -117,6 +117,7 @@ function menuA() {
     console.log('menu cursos')
     limpiarHTML();
     const titulo = document.createElement('h1');
+    titulo.classList.add('text-center');
     titulo.textContent = 'Afiliaciones Antioquia';
 
     const tabla = document.createElement('table');
@@ -267,6 +268,7 @@ function menuB() {
   console.log('menu cursos')
   limpiarHTML();
   const titulo = document.createElement('h1');
+  titulo.classList.add('text-center');
   titulo.textContent = 'Afiliaciones Bogotá';
 
   const tabla = document.createElement('table');
