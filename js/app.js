@@ -30,11 +30,10 @@ const container = document.querySelector('.container');
 const resultado = document.querySelector('#resultadin');
 const formulario = document.querySelector('#formulario');
 
-let HoraMundial;
 
-window.addEventListener('load', () => {
+/* window.addEventListener('load', () => {
     formulario.addEventListener('submit', mostrarOpcion);
-} )
+} ) */
 
 
 function mostrarOpcion(e) {
@@ -56,8 +55,90 @@ function mostrarOpcion(e) {
 function menuC() {
     console.log('menu aa');
     limpiarHTML();
-    const dropdown1 = document.createElement('div');
-    dropdown1.classList.add('dropdown','mx-auto');
+    const divcursos = document.createElement('div');
+    divcursos.classList.add=('text-center');
+    const titulo = document.createElement('h1');
+    titulo.classList.add('text-center');
+    titulo.textContent = 'Cursos Virtuales';
+
+    const ayscA = document.createElement('h3');
+    ayscA.textContent = 'Atencion y Servicio al Cliente Afiliado';
+    const link1 = document.createElement('a');
+    link1.textContent = 'Pagar'
+    link1.href = 'https://biz.payulatam.com/L0ca71194AA168A';
+    link1.classList.add('btn','btn-success', 'btn-lg');
+    link1.setAttribute('role', 'button');
+    link1.setAttribute('data-tooltip', '$70.000');
+    link1.setAttribute('data-tooltip-location', 'right');
+    ayscA.appendChild(link1);
+
+    const ayscN = document.createElement('h3');
+    ayscN.textContent = 'Atencion y Servicio al Cliente NO Afiliado';
+    const link2 = document.createElement('a');
+    link2.textContent = 'Pagar'
+    link2.href = 'href="https://biz.payulatam.com/L0ca7117CADA8E8';
+    link2.classList.add('btn','btn-success', 'btn-lg');
+    link2.setAttribute('role', 'button');
+    link2.setAttribute('data-tooltip', '$100.000');
+    link2.setAttribute('data-tooltip-location', 'right');
+    ayscN.appendChild(link2);
+
+    const reglamA = document.createElement('h3');
+    reglamA.textContent = 'Reglamento Tecnico para EDS Afiliado';
+    const link3 = document.createElement('a');
+    link3.textContent = 'Pagar'
+    link3.href = 'href="https://biz.payulatam.com/L0ca71109BCDDED';
+    link3.classList.add('btn','btn-success', 'btn-lg');
+    link3.setAttribute('role', 'button');
+    link3.setAttribute('data-tooltip', '$30.000');
+    link3.setAttribute('data-tooltip-location', 'right');
+    reglamA.appendChild(link3);
+    
+    const reglamN = document.createElement('h3');
+    reglamN.textContent = 'Reglamento Tecnico para EDS NO Afiliado';
+    const link4 = document.createElement('a');
+    link4.textContent = 'Pagar'
+    link4.href = 'href="https://biz.payulatam.com/L0ca711D2314C40';
+    link4.classList.add('btn','btn-success', 'btn-lg');
+    link4.setAttribute('role', 'button');
+    link4.setAttribute('data-tooltip', '$70.000');
+    link4.setAttribute('data-tooltip-location', 'right');
+    reglamN.appendChild(link4);
+
+    const dcseA = document.createElement('h3');
+    dcseA.textContent = 'Detección de Condiciones Subestándares en EDS Afiliado';
+    const link5 = document.createElement('a');
+    link5.textContent = 'Pagar'
+    link5.href = 'href="https://biz.payulatam.com/L0ca711D2314C40';
+    link5.classList.add('btn','btn-success', 'btn-lg');
+    link5.setAttribute('role', 'button');
+    link5.setAttribute('data-tooltip', '$70.000');
+    link5.setAttribute('data-tooltip-location', 'right');
+    dcseA.appendChild(link5);
+
+    const dcseN = document.createElement('h3');
+    dcseN.textContent = 'Detección de Condiciones Subestándares en EDS NO Afiliado';
+    const link6 = document.createElement('a');
+    link6.textContent = 'Pagar'
+    link6.href = 'href="https://biz.payulatam.com/L0ca71165D3D429';
+    link6.classList.add('btn','btn-success', 'btn-lg');
+    link6.setAttribute('role', 'button');
+    link6.setAttribute('data-tooltip', '$70.000');
+    link6.setAttribute('data-tooltip-location', 'right');
+    dcseN.appendChild(link6);
+
+  divcursos.appendChild(titulo);
+  divcursos.appendChild(ayscA);
+  divcursos.appendChild(ayscN);
+  divcursos.appendChild(reglamA);
+  divcursos.appendChild(reglamN);
+  divcursos.appendChild(dcseA);
+  divcursos.appendChild(dcseN);
+  resultadin.appendChild(divcursos);
+    
+    
+    
+    /* dropdown1.classList.add('dropdown','mx-auto');
 
     const curso = document.createElement('button');
     curso.textContent = 'Curso';
@@ -109,7 +190,7 @@ function menuC() {
     dropdown1.appendChild(menu1);
     resultadin.appendChild(dropdown1);
     console.log(resultadin);
-
+ */
 
 }
 
