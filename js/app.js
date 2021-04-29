@@ -55,6 +55,11 @@ function mostrarOpcion(e) {
 function menuC() {
     console.log('menu aa');
     limpiarHTML();
+    const separA = document.createElement('hr');
+    const separB = document.createElement('hr');
+    const separC = document.createElement('hr');
+    const separD = document.createElement('hr');
+    const separE = document.createElement('hr');
     const divcursos = document.createElement('div');
     divcursos.classList.add=('text-center');
     const titulo = document.createElement('h1');
@@ -127,13 +132,20 @@ function menuC() {
     link6.setAttribute('data-tooltip-location', 'right');
     dcseN.appendChild(link6);
 
+    console.log(separA);
   divcursos.appendChild(titulo);
   divcursos.appendChild(ayscA);
+  divcursos.appendChild(separA);
   divcursos.appendChild(ayscN);
+  divcursos.appendChild(separB);
   divcursos.appendChild(reglamA);
+  divcursos.appendChild(separC);
   divcursos.appendChild(reglamN);
+  divcursos.appendChild(separD);
   divcursos.appendChild(dcseA);
+  divcursos.appendChild(separE);
   divcursos.appendChild(dcseN);
+  console.log(divcursos)
   resultadin.appendChild(divcursos);
     
     
