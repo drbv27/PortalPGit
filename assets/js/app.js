@@ -62,7 +62,6 @@ function menuC() {
     boton3.appendChild(link3);
     r3.appendChild(boton3);
 
-
     const r4 = document.createElement('tr');
     const curso4 = document.createElement('td');
     curso4.textContent = 'Reglamento Tecnico para EDS No Afiliado'
@@ -120,106 +119,94 @@ function menuC() {
 
     resultadin.appendChild(titulo);
     resultadin.appendChild(tabla);
-
-    console.log(tabla);
-
-/*     const separA = document.createElement('hr');
-    const separB = document.createElement('hr');
-    const separC = document.createElement('hr');
-    const separD = document.createElement('hr');
-    const separE = document.createElement('hr');
-    const divcursos = document.createElement('div');
-    divcursos.classList.add=('text-center');
-    const titulo = document.createElement('h1');
-    titulo.classList.add('text-center');
-    titulo.textContent = 'Cursos Virtuales';
-
-    const ayscA = document.createElement('h3');
-    ayscA.textContent = 'Atencion y Servicio al Cliente Afiliado';
-    const link1 = document.createElement('a');
-    link1.textContent = 'Pagar'
-    link1.href = 'https://biz.payulatam.com/L0ca71194AA168A';
-    link1.classList.add('btn','btn-success', 'btn-lg');
-    link1.setAttribute('role', 'button');
-    link1.setAttribute('data-tooltip', '$70.000');
-    link1.setAttribute('data-tooltip-location', 'right');
-    ayscA.appendChild(link1);
-
-    const ayscN = document.createElement('h3');
-    ayscN.textContent = 'Atencion y Servicio al Cliente NO Afiliado';
-    const link2 = document.createElement('a');
-    link2.textContent = 'Pagar'
-    link2.href = 'href="https://biz.payulatam.com/L0ca7117CADA8E8';
-    link2.classList.add('btn','btn-success', 'btn-lg');
-    link2.setAttribute('role', 'button');
-    link2.setAttribute('data-tooltip', '$100.000');
-    link2.setAttribute('data-tooltip-location', 'right');
-    ayscN.appendChild(link2);
-
-    const reglamA = document.createElement('h3');
-    reglamA.textContent = 'Reglamento Tecnico para EDS Afiliado';
-    const link3 = document.createElement('a');
-    link3.textContent = 'Pagar'
-    link3.href = 'href="https://biz.payulatam.com/L0ca71109BCDDED';
-    link3.classList.add('btn','btn-success', 'btn-lg');
-    link3.setAttribute('role', 'button');
-    link3.setAttribute('data-tooltip', '$30.000');
-    link3.setAttribute('data-tooltip-location', 'right');
-    reglamA.appendChild(link3);
-    
-    const reglamN = document.createElement('h3');
-    reglamN.textContent = 'Reglamento Tecnico para EDS NO Afiliado';
-    const link4 = document.createElement('a');
-    link4.textContent = 'Pagar'
-    link4.href = 'href="https://biz.payulatam.com/L0ca711D2314C40';
-    link4.classList.add('btn','btn-success', 'btn-lg');
-    link4.setAttribute('role', 'button');
-    link4.setAttribute('data-tooltip', '$70.000');
-    link4.setAttribute('data-tooltip-location', 'right');
-    reglamN.appendChild(link4);
-
-    const dcseA = document.createElement('h3');
-    dcseA.textContent = 'Detección de Condiciones Subestándares en EDS Afiliado';
-    const link5 = document.createElement('a');
-    link5.textContent = 'Pagar'
-    link5.href = 'href="https://biz.payulatam.com/L0ca711D2314C40';
-    link5.classList.add('btn','btn-success', 'btn-lg');
-    link5.setAttribute('role', 'button');
-    link5.setAttribute('data-tooltip', '$70.000');
-    link5.setAttribute('data-tooltip-location', 'right');
-    dcseA.appendChild(link5);
-
-    const dcseN = document.createElement('h3');
-    dcseN.textContent = 'Detección de Condiciones Subestándares en EDS NO Afiliado';
-    const link6 = document.createElement('a');
-    link6.textContent = 'Pagar'
-    link6.href = 'href="https://biz.payulatam.com/L0ca71165D3D429';
-    link6.classList.add('btn','btn-success', 'btn-lg');
-    link6.setAttribute('role', 'button');
-    link6.setAttribute('data-tooltip', '$70.000');
-    link6.setAttribute('data-tooltip-location', 'right');
-    dcseN.appendChild(link6);
-
-    console.log(separA);
-  divcursos.appendChild(titulo);
-  divcursos.appendChild(ayscA);
-  divcursos.appendChild(separA);
-  divcursos.appendChild(ayscN);
-  divcursos.appendChild(separB);
-  divcursos.appendChild(reglamA);
-  divcursos.appendChild(separC);
-  divcursos.appendChild(reglamN);
-  divcursos.appendChild(separD);
-  divcursos.appendChild(dcseA);
-  divcursos.appendChild(separE);
-  divcursos.appendChild(dcseN);
-  console.log(divcursos)
-  resultadin.appendChild(divcursos); */
-
 }
 
 function menuA() {
-    console.log('menu cursos')
+    limpiarHTML();
+
+    const titulo = document.createElement('h1');
+    titulo.classList.add('text-center');
+    titulo.textContent = 'Afiliaciones Antioquia';
+
+    const subtitulo = document.createElement('h4');
+    subtitulo.classList.add('text-center');
+    subtitulo.textContent = 'Tarifa año 2021 Cuota de Sostenimiento Fendipetroleo Dependencia Antioquia y Choco';
+
+    const tabla = document.createElement('table');
+    tabla.classList.add('table', 'table-hover');
+    const head = document.createElement('thead');
+
+    const r1 = document.createElement('tr');
+    const modalidad = document.createElement('th');
+    modalidad.textContent = 'Modalidad';
+    const pago = document.createElement('th');
+    pago.textContent = ' ';
+    r1.appendChild(modalidad);
+    r1.appendChild(pago);
+
+    const r2 = document.createElement('tr');
+    const modalidad2 = document.createElement('td');
+    modalidad2.innerHTML = '<b>Pago Mensual</b> -  EDS con ventas mensuales inferiores a 10.000 Galones';
+    const pago2 = document.createElement('td');
+    const link2 = document.createElement('a');
+    link2.textContent = 'Pagar'
+    link2.href = 'https://biz.payulatam.com/L0ca7119EE68F4F';
+    link2.classList.add('btn','btn-primary', 'btn-lg');
+    link2.setAttribute('role', 'button');
+    link2.setAttribute('data-tooltip', '$50.000');
+    link2.setAttribute('target', '_blank');
+    link2.setAttribute('data-tooltip-location', 'right');
+    pago2.appendChild(link2);
+    r2.appendChild(modalidad2);
+    r2.appendChild(pago2);
+    
+    const r3 = document.createElement('tr');
+    const modalidad3 = document.createElement('td');
+    modalidad3.innerHTML = '<b>Pago Semestral</b> -  EDS con ventas mensuales inferiores a 10.000 Galones';
+    const pago3 = document.createElement('td');
+    const link3 = document.createElement('a');
+    link3.textContent = 'Pagar'
+    link3.href = 'https://biz.payulatam.com/L0ca7113AEFA653';
+    link3.classList.add('btn','btn-primary', 'btn-lg');
+    link3.setAttribute('role', 'button');
+    link3.setAttribute('data-tooltip', '$300.000');
+    link3.setAttribute('target', '_blank');
+    link3.setAttribute('data-tooltip-location', 'right');
+    pago3.appendChild(link3);
+    r3.appendChild(modalidad3);
+    r3.appendChild(pago3);
+
+    const r4 = document.createElement('tr');
+    const modalidad4 = document.createElement('td');
+    modalidad4.innerHTML = '<b>Pago Anual</b> -  EDS con ventas mensuales inferiores a 10.000 Galones';
+    const pago4 = document.createElement('td');
+    const link4 = document.createElement('a');
+    link4.textContent = 'Pagar'
+    link4.href = 'https://biz.payulatam.com/L0ca711C5DE161F';
+    link4.classList.add('btn','btn-primary', 'btn-lg');
+    link4.setAttribute('role', 'button');
+    link4.setAttribute('data-tooltip', '$600.000');
+    link4.setAttribute('target', '_blank');
+    link4.setAttribute('data-tooltip-location', 'right');
+    pago4.appendChild(link4);
+    r4.appendChild(modalidad4);
+    r4.appendChild(pago4);
+
+    tabla.appendChild(r1);
+    tabla.appendChild(r2);
+    tabla.appendChild(r3);
+    tabla.appendChild(r4);
+
+
+    console.log(tabla);
+
+    resultadin.appendChild(titulo);
+    resultadin.appendChild(subtitulo);
+    resultadin.appendChild(tabla);
+
+    console.log(resultadin);
+
+   /*  console.log('menu cursos')
     limpiarHTML();
     const titulo = document.createElement('h1');
     titulo.classList.add('text-center');
@@ -363,7 +350,7 @@ function menuA() {
     resultadin.appendChild(tabla);
     
 
-    console.log(resultadin);
+    console.log(resultadin); */
 
 }
 
