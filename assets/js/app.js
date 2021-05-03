@@ -192,10 +192,78 @@ function menuA() {
     r4.appendChild(modalidad4);
     r4.appendChild(pago4);
 
+    const r5 = document.createElement('tr');
+    const modalidad5 = document.createElement('td');
+    modalidad5.innerHTML = '<b>Pago Mensual</b> -  EDS con ventas mensuales superiores a 10.000 Galones';
+    const pago5 = document.createElement('td');
+    const link5 = document.createElement('a');
+    link5.textContent = 'Pagar'
+    link5.href = 'https://biz.payulatam.com/L0ca7116A5186B9';
+    link5.classList.add('btn','btn-primary', 'btn-lg');
+    link5.setAttribute('role', 'button');
+    link5.setAttribute('data-tooltip', '$100.000');
+    link5.setAttribute('target', '_blank');
+    link5.setAttribute('data-tooltip-location', 'right');
+    pago5.appendChild(link5);
+    r5.appendChild(modalidad5);
+    r5.appendChild(pago5);
+
+    const r6 = document.createElement('tr');
+    const modalidad6 = document.createElement('td');
+    modalidad6.innerHTML = '<b>Pago Mensual</b> -  Descuento por Grupos 15% (2EDS) ';
+    const pago6 = document.createElement('td');
+    const link6 = document.createElement('a');
+    link6.textContent = 'Pagar'
+    link6.href = 'https://biz.payulatam.com/L0ca7119F64C186';
+    link6.classList.add('btn','btn-primary', 'btn-lg');
+    link6.setAttribute('role', 'button');
+    link6.setAttribute('data-tooltip', '$170.000');
+    link6.setAttribute('target', '_blank');
+    link6.setAttribute('data-tooltip-location', 'right');
+    pago6.appendChild(link6);
+    r6.appendChild(modalidad6);
+    r6.appendChild(pago6);
+
+    const r7 = document.createElement('tr');
+    const modalidad7 = document.createElement('td');
+    modalidad7.innerHTML = '<b>Pago Mensual</b> -  Descuento por Grupos 15% (3EDS) ';
+    const pago7 = document.createElement('td');
+    const link7 = document.createElement('a');
+    link7.textContent = 'Pagar'
+    link7.href = 'https://biz.payulatam.com/L0ca7114D1300E5';
+    link7.classList.add('btn','btn-primary', 'btn-lg');
+    link7.setAttribute('role', 'button');
+    link7.setAttribute('data-tooltip', '$255.000');
+    link7.setAttribute('target', '_blank');
+    link7.setAttribute('data-tooltip-location', 'right');
+    pago7.appendChild(link7);
+    r7.appendChild(modalidad7);
+    r7.appendChild(pago7);
+
+    const r8 = document.createElement('tr');
+    const modalidad8 = document.createElement('td');
+    modalidad8.innerHTML = '<b>Pago Semestral</b> - EDS con ventas mensuales superiores a 10.000 Galones ';
+    const pago8 = document.createElement('td');
+    const link8 = document.createElement('a');
+    link8.textContent = 'Pagar'
+    link8.href = 'https://biz.payulatam.com/L0ca7118A700626';
+    link8.classList.add('btn','btn-primary', 'btn-lg');
+    link8.setAttribute('role', 'button');
+    link8.setAttribute('data-tooltip', '$500.000');
+    link8.setAttribute('target', '_blank');
+    link8.setAttribute('data-tooltip-location', 'right');
+    pago8.appendChild(link8);
+    r8.appendChild(modalidad8);
+    r8.appendChild(pago8);
+
     tabla.appendChild(r1);
     tabla.appendChild(r2);
     tabla.appendChild(r3);
     tabla.appendChild(r4);
+    tabla.appendChild(r5);
+    tabla.appendChild(r6);
+    tabla.appendChild(r7);
+    tabla.appendChild(r8);
 
 
     console.log(tabla);
@@ -206,152 +274,7 @@ function menuA() {
 
     console.log(resultadin);
 
-   /*  console.log('menu cursos')
-    limpiarHTML();
-    const titulo = document.createElement('h1');
-    titulo.classList.add('text-center');
-    titulo.textContent = 'Afiliaciones Antioquia';
-
-    const tabla = document.createElement('table');
-    tabla.classList.add('table', 'table-hover');
-    const head = document.createElement('thead');
-    
-    const r1 = document.createElement('tr');
-    const modalidad = document.createElement('th');
-    modalidad.textContent = 'Modalidad';
-    const valor = document.createElement('th');
-    valor.textContent = 'Valor';
-    const pago = document.createElement('th');
-    pago.textContent = 'Pago';
-    r1.appendChild(modalidad);
-    r1.appendChild(valor)
-    r1.appendChild(pago);
-
-
-    const body = document.createElement('tbody');
-
-    const r2 = document.createElement('tr');
-    const modalidad1 = document.createElement('td');
-    modalidad1.textContent = 'Pago Mensual - Tarifa año 2021 Cuota de Sostenimiento Fendipetroleo Dependencia Antioquia y Choco, EDS con ventas mensuales inferiores a 10.000 Galones';
-    const valor1 = document.createElement('td');
-    valor1.textContent = '$50.000';
-    const pagar1 = document.createElement('td');
-    const link1 = document.createElement('a');
-    link1.classList.add('font-weight-bold');
-    link1.textContent = 'Pagar';
-    link1.href = 'https://biz.payulatam.com/L0ca7119EE68F4F';
-    pagar1.appendChild(link1);
-    r2.appendChild(modalidad1);
-    r2.appendChild(valor1);
-    r2.appendChild(pagar1);
-    
-    const r3 = document.createElement('tr');
-    const modalidad2 = document.createElement('td');
-    modalidad2.textContent = 'Pago Semestral - Tarifa año 2021 Cuota de Sostenimiento Fendipetroleo Dependencia Antioquia y Choco, EDS con ventas mensuales inferiores a 10.000 Galones';
-    const valor2 = document.createElement('td');
-    valor2.textContent = '$300.000';
-    const pagar2 = document.createElement('td');
-    const link2 = document.createElement('a');
-    link2.classList.add('font-weight-bold');
-    link2.textContent = 'Pagar';
-    link2.href = 'https://biz.payulatam.com/L0ca7113AEFA653';
-    pagar2.appendChild(link2);
-    r3.appendChild(modalidad2);
-    r3.appendChild(valor2);
-    r3.appendChild(pagar2);
-
-    const r4 = document.createElement('tr');
-    const modalidad3 = document.createElement('td');
-    modalidad3.textContent = 'Pago Anual - Tarifa año 2021 Cuota de Sostenimiento Fendipetroleo Dependencia Antioquia y Choco, EDS con ventas mensuales inferiores a 10.000 Galones';
-    const valor3 = document.createElement('td');
-    valor3.textContent = '$600.000';
-    const pagar3 = document.createElement('td');
-    const link3 = document.createElement('a');
-    link3.classList.add('font-weight-bold');
-    link3.textContent = 'Pagar';
-    link3.href = 'https://biz.payulatam.com/L0ca711C5DE161F';
-    pagar3.appendChild(link3);
-    r4.appendChild(modalidad3);
-    r4.appendChild(valor3);
-    r4.appendChild(pagar3);
-
-    const r5 = document.createElement('tr');
-    const modalidad4 = document.createElement('td');
-    modalidad4.textContent = 'Pago Mensual - Tarifa año 2021 Cuota de Sostenimiento Fendipetroleo Dependencia Antioquia y Choco.';
-    const valor4 = document.createElement('td');
-    valor4.textContent = '$100.000';
-    const pagar4 = document.createElement('td');
-    const link4 = document.createElement('a');
-    link4.classList.add('font-weight-bold');
-    link4.textContent = 'Pagar';
-    link4.href = 'https://biz.payulatam.com/L0ca7116A5186B9';
-    pagar4.appendChild(link4);
-    r5.appendChild(modalidad4);
-    r5.appendChild(valor4);
-    r5.appendChild(pagar4);
-
-    const r6 = document.createElement('tr');
-    const modalidad5 = document.createElement('td');
-    modalidad5.textContent = 'Pago Mensual Descuento por Grupos 15% (2EDS) - Tarifa año 2021 Cuota de Sostenimiento Fendipetroleo Dependencia Antioquia y Choco.';
-    const valor5 = document.createElement('td');
-    valor5.textContent = '$170.000';
-    const pagar5 = document.createElement('td');
-    const link5 = document.createElement('a');
-    link5.classList.add('font-weight-bold');
-    link5.textContent = 'Pagar';
-    link5.href = 'https://biz.payulatam.com/L0ca7119F64C186';
-    pagar5.appendChild(link5);
-    r6.appendChild(modalidad5);
-    r6.appendChild(valor5);
-    r6.appendChild(pagar5);
-
-    const r7 = document.createElement('tr');
-    const modalidad6 = document.createElement('td');
-    modalidad6.textContent = 'Pago Mensual Descuento por Grupos 15% (3EDS) - Cuota de Sostenimiento Fendipetroleo Dependencia Antioquia y Choco.';
-    const valor6 = document.createElement('td');
-    valor6.textContent = '$255.000';
-    const pagar6 = document.createElement('td');
-    const link6 = document.createElement('a');
-    link6.classList.add('font-weight-bold');
-    link6.textContent = 'Pagar';
-    link6.href = 'https://biz.payulatam.com/L0ca7114D1300E5';
-    pagar6.appendChild(link6);
-    r7.appendChild(modalidad6);
-    r7.appendChild(valor6);
-    r7.appendChild(pagar6);
-
-    const r8 = document.createElement('tr');
-    const modalidad7 = document.createElement('td');
-    modalidad7.textContent = 'Pago Semestral - Tarifa año 2021 Cuota de Sostenimiento Fendipetroleo Dependencia Antioquia y Choco.';
-    const valor7 = document.createElement('td');
-    valor7.textContent = '$500.000';
-    const pagar7 = document.createElement('td');
-    const link7 = document.createElement('a');
-    link7.classList.add('font-weight-bold');
-    link7.textContent = 'Pagar';
-    link7.href = 'https://biz.payulatam.com/L0ca7118A700626';
-    pagar7.appendChild(link7);
-    r8.appendChild(modalidad7);
-    r8.appendChild(valor7);
-    r8.appendChild(pagar7);   
-
-    head.appendChild(r1);
-    body.appendChild(r2);
-    body.appendChild(r3);
-    body.appendChild(r4);
-    body.appendChild(r5);
-    body.appendChild(r6);
-    body.appendChild(r7);
-    body.appendChild(r8);
-    tabla.appendChild(head);
-    tabla.appendChild(body);
-    resultadin.classList.remove('custom-centered')
-    resultadin.appendChild(titulo);
-    resultadin.appendChild(tabla);
-    
-
-    console.log(resultadin); */
-
+   
 }
 
 
