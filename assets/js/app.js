@@ -2,26 +2,128 @@ const container = document.querySelector('.container');
 const resultado = document.querySelector('#resultadin');
 const formulario = document.querySelector('#formulario');
 
-function mostrarOpcion(e) {
-    e.preventDefault();
-    console.log('presionando boton');
-    const tipoP = document.querySelector('#tipoP').value;
-    console.log(tipoP);
-    if (tipoP==='cu'){
-        menuC();
-    }
-    else if (tipoP==='aa'){
-        menuA();
-    }
-    else if (tipoP==='ab'){
-        menuB();   
-    }
-}
 
 function menuC() {
     console.log('menu aa');
     limpiarHTML();
-    const separA = document.createElement('hr');
+
+    const titulo = document.createElement('h1');
+    titulo.classList.add('text-center');
+    titulo.textContent = 'Cursos Virtuales';
+
+    const tabla = document.createElement('table');
+    tabla.classList.add('table', 'table-hover');
+
+    const r1 = document.createElement('tr');
+    const curso1 = document.createElement('td');
+    curso1.textContent = 'Atencion y Servicio al Cliente Afiliado'
+    const boton1 = document.createElement('td');
+    const link1 = document.createElement('a');
+    link1.textContent = 'Pagar'
+    link1.href = 'https://biz.payulatam.com/L0ca71194AA168A';
+    link1.classList.add('btn','btn-primary', 'btn-lg');
+    link1.setAttribute('role', 'button');
+    link1.setAttribute('data-tooltip', '$70.000');
+    link1.setAttribute('target', '_blank');
+    link1.setAttribute('data-tooltip-location', 'right');
+    r1.appendChild(curso1);
+    boton1.appendChild(link1);
+    r1.appendChild(boton1);
+    
+    const r2 = document.createElement('tr');
+    const curso2 = document.createElement('td');
+    curso2.textContent = 'Atencion y Servicio al Cliente No Afiliado'
+    const boton2 = document.createElement('td');
+    const link2 = document.createElement('a');
+    link2.textContent = 'Pagar'
+    link2.href = 'https://biz.payulatam.com/L0ca7117CADA8E8';
+    link2.classList.add('btn','btn-primary', 'btn-lg');
+    link2.setAttribute('role', 'button');
+    link2.setAttribute('data-tooltip', '$100.000');
+    link2.setAttribute('target', '_blank');
+    link2.setAttribute('data-tooltip-location', 'right');
+    r2.appendChild(curso2);
+    boton2.appendChild(link2);
+    r2.appendChild(boton2);
+
+    const r3 = document.createElement('tr');
+    const curso3 = document.createElement('td');
+    curso3.textContent = 'Reglamento Tecnico para EDS Afiliado'
+    const boton3 = document.createElement('td');
+    const link3 = document.createElement('a');
+    link3.textContent = 'Pagar'
+    link3.href = 'https://biz.payulatam.com/L0ca71109BCDDED';
+    link3.classList.add('btn','btn-primary', 'btn-lg');
+    link3.setAttribute('role', 'button');
+    link3.setAttribute('data-tooltip', '$30.000');
+    link3.setAttribute('target', '_blank');
+    link3.setAttribute('data-tooltip-location', 'right');
+    r3.appendChild(curso3);
+    boton3.appendChild(link3);
+    r3.appendChild(boton3);
+
+
+    const r4 = document.createElement('tr');
+    const curso4 = document.createElement('td');
+    curso4.textContent = 'Reglamento Tecnico para EDS No Afiliado'
+    const boton4 = document.createElement('td');
+    const link4 = document.createElement('a');
+    link4.textContent = 'Pagar'
+    link4.href = 'https://biz.payulatam.com/L0ca711D2314C40';
+    link4.classList.add('btn','btn-primary', 'btn-lg');
+    link4.setAttribute('role', 'button');
+    link4.setAttribute('data-tooltip', '$70.000');
+    link4.setAttribute('target', '_blank');
+    link4.setAttribute('data-tooltip-location', 'right');
+    r4.appendChild(curso4);
+    boton4.appendChild(link4);
+    r4.appendChild(boton4);
+
+    const r5 = document.createElement('tr');
+    const curso5 = document.createElement('td');
+    curso5.textContent = 'Detección de Condiciones Subestándares en EDS Afiliado'
+    const boton5 = document.createElement('td');
+    const link5 = document.createElement('a');
+    link5.textContent = 'Pagar'
+    link5.href = 'https://biz.payulatam.com/L0ca71144517DCA';
+    link5.classList.add('btn','btn-primary', 'btn-lg');
+    link5.setAttribute('role', 'button');
+    link5.setAttribute('data-tooltip', '$30.000');
+    link5.setAttribute('target', '_blank');
+    link5.setAttribute('data-tooltip-location', 'right');
+    r5.appendChild(curso5);
+    boton5.appendChild(link5);
+    r5.appendChild(boton5);
+
+    const r6 = document.createElement('tr');
+    const curso6 = document.createElement('td');
+    curso6.textContent = 'Detección de Condiciones Subestándares en EDS No Afiliado'
+    const boton6 = document.createElement('td');
+    const link6 = document.createElement('a');
+    link6.textContent = 'Pagar'
+    link6.href = 'https://biz.payulatam.com/L0ca71165D3D429';
+    link6.classList.add('btn','btn-primary', 'btn-lg');
+    link6.setAttribute('role', 'button');
+    link6.setAttribute('data-tooltip', '$70.000');
+    link6.setAttribute('target', '_blank');
+    link6.setAttribute('data-tooltip-location', 'right');
+    r6.appendChild(curso6);
+    boton6.appendChild(link6);
+    r6.appendChild(boton6);
+
+    tabla.appendChild(r1);
+    tabla.appendChild(r2);
+    tabla.appendChild(r3);
+    tabla.appendChild(r4);
+    tabla.appendChild(r5);
+    tabla.appendChild(r6);
+
+    resultadin.appendChild(titulo);
+    resultadin.appendChild(tabla);
+
+    console.log(tabla);
+
+/*     const separA = document.createElement('hr');
     const separB = document.createElement('hr');
     const separC = document.createElement('hr');
     const separD = document.createElement('hr');
@@ -112,7 +214,7 @@ function menuC() {
   divcursos.appendChild(separE);
   divcursos.appendChild(dcseN);
   console.log(divcursos)
-  resultadin.appendChild(divcursos);
+  resultadin.appendChild(divcursos); */
 
 }
 
