@@ -12,12 +12,20 @@ function menuC() {
     titulo.textContent = 'Cursos Virtuales';
 
     const tabla = document.createElement('table');
-    tabla.classList.add('table', 'table-hover');
+    tabla.classList.add('table', 'table-bordered', 'table-active');
+    tabla.setAttribute('style', 'border-color: blue');
 
     const r1 = document.createElement('tr');
     const curso1 = document.createElement('td');
-    curso1.textContent = 'Atencion y Servicio al Cliente Afiliado'
+    curso1.classList.add('align-middle');
+    curso1.setAttribute('rowspan', '2');
+    curso1.innerHTML = '<b>Atencion y Servicio al Cliente</b>';
+
+    const condi1 = document.createElement('td');
+    condi1.classList.add('align-middle');
+    condi1.textContent = 'EDS. Afiliada';
     const boton1 = document.createElement('td');
+    boton1.classList.add('align-middle', 'text-center');
     const link1 = document.createElement('a');
     link1.textContent = 'Pagar'
     link1.href = 'https://biz.payulatam.com/L0ca71194AA168A';
@@ -27,9 +35,36 @@ function menuC() {
     link1.setAttribute('target', '_blank');
     link1.setAttribute('data-tooltip-location', 'right');
     r1.appendChild(curso1);
+    r1.appendChild(condi1);
     boton1.appendChild(link1);
     r1.appendChild(boton1);
     
+    const r2 = document.createElement('tr');
+    const condi2 = document.createElement('td');
+    condi2.classList.add('align-middle');
+    condi2.textContent = 'EDS. No Afiliada';
+    const boton2 = document.createElement('td');
+    boton2.classList.add('align-middle', 'text-center');
+    const link2 = document.createElement('a');
+    link2.textContent = 'Pagar'
+    link2.href = 'https://biz.payulatam.com/L0ca7117CADA8E8';
+    link2.classList.add('btn','btn-primary', 'btn-lg');
+    link2.setAttribute('role', 'button');
+    link2.setAttribute('data-tooltip', '$70.000');
+    link2.setAttribute('target', '_blank');
+    link2.setAttribute('data-tooltip-location', 'right');
+    r2.appendChild(condi2);
+    boton2.appendChild(link2);
+    r2.appendChild(boton2);
+
+
+
+
+
+
+
+
+    /* 
     const r2 = document.createElement('tr');
     const curso2 = document.createElement('td');
     curso2.textContent = 'Atencion y Servicio al Cliente No Afiliado'
@@ -108,14 +143,14 @@ function menuC() {
     link6.setAttribute('data-tooltip-location', 'right');
     r6.appendChild(curso6);
     boton6.appendChild(link6);
-    r6.appendChild(boton6);
+    r6.appendChild(boton6); */
 
     tabla.appendChild(r1);
     tabla.appendChild(r2);
-    tabla.appendChild(r3);
+/*     tabla.appendChild(r3);
     tabla.appendChild(r4);
     tabla.appendChild(r5);
-    tabla.appendChild(r6);
+    tabla.appendChild(r6); */
 
     resultadin.appendChild(titulo);
     resultadin.appendChild(tabla);
