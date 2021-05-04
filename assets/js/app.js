@@ -11,9 +11,9 @@ function menuC() {
     titulo.classList.add('text-center');
     titulo.textContent = 'Cursos Virtuales';
 
-    const tabla = document.createElement('table');
-    tabla.classList.add('table', 'table-bordered', 'table-active');
-    tabla.setAttribute('style', 'border-color: blue');
+    const tabla1 = document.createElement('table');
+    tabla1.classList.add('table', 'table-bordered', 'table-active');
+    tabla1.setAttribute('style', 'border-color: blue');
 
     const r1 = document.createElement('tr');
     const curso1 = document.createElement('td');
@@ -23,7 +23,7 @@ function menuC() {
 
     const condi1 = document.createElement('td');
     condi1.classList.add('align-middle');
-    condi1.textContent = 'EDS. Afiliada';
+    condi1.innerHTML = '<b>EDS. Afiliada</b>';
     const boton1 = document.createElement('td');
     boton1.classList.add('align-middle', 'text-center');
     const link1 = document.createElement('a');
@@ -57,10 +57,100 @@ function menuC() {
     boton2.appendChild(link2);
     r2.appendChild(boton2);
 
+    const s1 = document.createElement('hr');
+
+    const tabla2 = document.createElement('table');
+    tabla2.classList.add('table', 'table-bordered', 'table-active');
+    tabla2.setAttribute('style', 'border-color: blue');
+
+    const r3 = document.createElement('tr');
+    const curso3 = document.createElement('td');
+    curso3.classList.add('align-middle');
+    curso3.setAttribute('rowspan', '2');
+    curso3.innerHTML = '<b>Atencion y Servicio al Cliente</b>';
+
+    const condi3 = document.createElement('td');
+    condi3.classList.add('align-middle');
+    condi3.textContent = 'EDS. Afiliada';
+    const boton3 = document.createElement('td');
+    boton3.classList.add('align-middle', 'text-center');
+    const link3 = document.createElement('a');
+    link3.textContent = 'Pagar'
+    link3.href = 'https://biz.payulatam.com/L0ca71194AA168A';
+    link3.classList.add('btn','btn-primary', 'btn-lg');
+    link3.setAttribute('role', 'button');
+    link3.setAttribute('data-tooltip', '$70.000');
+    link3.setAttribute('target', '_blank');
+    link3.setAttribute('data-tooltip-location', 'right');
+    r3.appendChild(curso3);
+    r3.appendChild(condi3);
+    boton3.appendChild(link3);
+    r3.appendChild(boton3);
+    
+    const r4 = document.createElement('tr');
+    const condi4 = document.createElement('td');
+    condi4.classList.add('align-middle');
+    condi4.textContent = 'EDS. No Afiliada';
+    const boton4 = document.createElement('td');
+    boton4.classList.add('align-middle', 'text-center');
+    const link4 = document.createElement('a');
+    link4.textContent = 'Pagar'
+    link4.href = 'https://biz.payulatam.com/L0ca7117CADA8E8';
+    link4.classList.add('btn','btn-primary', 'btn-lg');
+    link4.setAttribute('role', 'button');
+    link4.setAttribute('data-tooltip', '$70.000');
+    link4.setAttribute('target', '_blank');
+    link4.setAttribute('data-tooltip-location', 'right');
+    r4.appendChild(condi4);
+    boton4.appendChild(link4);
+    r4.appendChild(boton4);
 
 
+    const tabla3 = document.createElement('table');
+    tabla3.classList.add('table', 'table-bordered', 'table-active');
+    tabla3.setAttribute('style', 'border-color: blue');
 
+    const r5 = document.createElement('tr');
+    const curso5 = document.createElement('td');
+    curso5.classList.add('align-middle');
+    curso5.setAttribute('rowspan', '2');
+    curso5.innerHTML = '<b>Atencion y Servicio al Cliente</b>';
 
+    const condi5 = document.createElement('td');
+    condi5.classList.add('align-middle');
+    condi5.textContent = 'EDS. Afiliada';
+    const boton5 = document.createElement('td');
+    boton5.classList.add('align-middle', 'text-center');
+    const link5 = document.createElement('a');
+    link5.textContent = 'Pagar'
+    link5.href = 'https://biz.payulatam.com/L0ca71194AA168A';
+    link5.classList.add('btn','btn-primary', 'btn-lg');
+    link5.setAttribute('role', 'button');
+    link5.setAttribute('data-tooltip', '$70.000');
+    link5.setAttribute('target', '_blank');
+    link5.setAttribute('data-tooltip-location', 'right');
+    r5.appendChild(curso5);
+    r5.appendChild(condi5);
+    boton5.appendChild(link5);
+    r5.appendChild(boton5);
+    
+    const r6 = document.createElement('tr');
+    const condi6 = document.createElement('td');
+    condi6.classList.add('align-middle');
+    condi6.textContent = 'EDS. No Afiliada';
+    const boton6 = document.createElement('td');
+    boton6.classList.add('align-middle', 'text-center');
+    const link6 = document.createElement('a');
+    link6.textContent = 'Pagar'
+    link6.href = 'https://biz.payulatam.com/L0ca7117CADA8E8';
+    link6.classList.add('btn','btn-primary', 'btn-lg');
+    link6.setAttribute('role', 'button');
+    link6.setAttribute('data-tooltip', '$70.000');
+    link6.setAttribute('target', '_blank');
+    link6.setAttribute('data-tooltip-location', 'right');
+    r6.appendChild(condi6);
+    boton6.appendChild(link6);
+    r6.appendChild(boton6);
 
 
 
@@ -145,15 +235,22 @@ function menuC() {
     boton6.appendChild(link6);
     r6.appendChild(boton6); */
 
-    tabla.appendChild(r1);
-    tabla.appendChild(r2);
+    tabla1.appendChild(r1);
+    tabla1.appendChild(r2);
+    tabla2.appendChild(r3);
+    tabla2.appendChild(r4);
+    tabla3.appendChild(r5);
+    tabla3.appendChild(r6);
 /*     tabla.appendChild(r3);
     tabla.appendChild(r4);
     tabla.appendChild(r5);
     tabla.appendChild(r6); */
 
     resultadin.appendChild(titulo);
-    resultadin.appendChild(tabla);
+    resultadin.appendChild(tabla1);
+    resultadin.appendChild(s1);
+    resultadin.appendChild(tabla2);
+    resultadin.appendChild(tabla3);
 }
 
 function menuA() {
