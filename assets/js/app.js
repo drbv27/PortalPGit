@@ -12,15 +12,14 @@ function menuC() {
     titulo.textContent = 'Cursos Virtuales';
 
     const tabla1 = document.createElement('table');
-    tabla1.classList.add('table', 'table-bordered', 'table-active');
-    tabla1.setAttribute('style', 'border-color: blue');
+    tabla1.classList.add('table', 'table-bordered');
+    /* tabla1.setAttribute('style', 'border-color: blue'); */
 
     const r1 = document.createElement('tr');
     const curso1 = document.createElement('td');
     curso1.classList.add('align-middle');
     curso1.setAttribute('rowspan', '2');
     curso1.innerHTML = '<b>Atención y Servicio al Cliente</b>';
-
     const condi1 = document.createElement('td');
     condi1.classList.add('align-middle');
     condi1.innerHTML = '<b>EDS. Afiliada</b>';
@@ -38,7 +37,6 @@ function menuC() {
     r1.appendChild(condi1);
     boton1.appendChild(link1);
     r1.appendChild(boton1);
-    
     const r2 = document.createElement('tr');
     const condi2 = document.createElement('td');
     condi2.classList.add('align-middle');
@@ -57,9 +55,107 @@ function menuC() {
     boton2.appendChild(link2);
     r2.appendChild(boton2);
 
-    const s1 = document.createElement('hr');
+    const s1 = document.createElement('tr');
+    const s1a = document.createElement('td');
+    s1a.classList.add('table-active');
+    s1a.setAttribute('colspan', '3');
+    s1.appendChild(s1a);
+    console.log(s1);
 
-    const tabla2 = document.createElement('table');
+
+    const r3 = document.createElement('tr');
+    const curso3 = document.createElement('td');
+    curso3.classList.add('align-middle');
+    curso3.setAttribute('rowspan', '2');
+    curso3.innerHTML = '<b>Atención y Servicio al Cliente</b>';
+    const condi3 = document.createElement('td');
+    condi3.classList.add('align-middle');
+    condi3.innerHTML = '<b>EDS. Afiliada</b>';
+    const boton3 = document.createElement('td');
+    boton3.classList.add('align-middle', 'text-center');
+    const link3 = document.createElement('a');
+    link3.textContent = 'Pagar'
+    link3.href = 'https://biz.payulatam.com/L0ca71194AA168A';
+    link3.classList.add('btn','btn-primary', 'btn-lg');
+    link3.setAttribute('role', 'button');
+    link3.setAttribute('data-tooltip', '$70.000');
+    link3.setAttribute('target', '_blank');
+    link3.setAttribute('data-tooltip-location', 'right');
+    r3.appendChild(curso3);
+    r3.appendChild(condi3);
+    boton3.appendChild(link3);
+    r3.appendChild(boton3);
+    const r4 = document.createElement('tr');
+    const condi4 = document.createElement('td');
+    condi4.classList.add('align-middle');
+    condi4.textContent = 'EDS. No Afiliada';
+    const boton4 = document.createElement('td');
+    boton4.classList.add('align-middle', 'text-center');
+    const link4 = document.createElement('a');
+    link4.textContent = 'Pagar'
+    link4.href = 'https://biz.payulatam.com/L0ca7117CADA8E8';
+    link4.classList.add('btn','btn-primary', 'btn-lg');
+    link4.setAttribute('role', 'button');
+    link4.setAttribute('data-tooltip', '$100.000');
+    link4.setAttribute('target', '_blank');
+    link4.setAttribute('data-tooltip-location', 'right');
+    r4.appendChild(condi4);
+    boton4.appendChild(link4);
+    r4.appendChild(boton4);
+
+    const s2 = document.createElement('tr');
+    const s2a = document.createElement('td');
+    s2a.classList.add('table-active');
+    s2a.setAttribute('colspan', '3');
+    s2.appendChild(s2a);
+    console.log(s2);
+
+
+    const r5 = document.createElement('tr');
+    const curso5 = document.createElement('td');
+    curso5.classList.add('align-middle');
+    curso5.setAttribute('rowspan', '2');
+    curso5.innerHTML = '<b>Atención y Servicio al Cliente</b>';
+    const condi5 = document.createElement('td');
+    condi5.classList.add('align-middle');
+    condi5.innerHTML = '<b>EDS. Afiliada</b>';
+    const boton5 = document.createElement('td');
+    boton5.classList.add('align-middle', 'text-center');
+    const link5 = document.createElement('a');
+    link5.textContent = 'Pagar'
+    link5.href = 'https://biz.payulatam.com/L0ca71194AA168A';
+    link5.classList.add('btn','btn-primary', 'btn-lg');
+    link5.setAttribute('role', 'button');
+    link5.setAttribute('data-tooltip', '$70.000');
+    link5.setAttribute('target', '_blank');
+    link5.setAttribute('data-tooltip-location', 'right');
+    r5.appendChild(curso5);
+    r5.appendChild(condi5);
+    boton5.appendChild(link5);
+    r5.appendChild(boton5);
+    const r6 = document.createElement('tr');
+    const condi6 = document.createElement('td');
+    condi6.classList.add('align-middle');
+    condi6.textContent = 'EDS. No Afiliada';
+    const boton6 = document.createElement('td');
+    boton6.classList.add('align-middle', 'text-center');
+    const link6 = document.createElement('a');
+    link6.textContent = 'Pagar'
+    link6.href = 'https://biz.payulatam.com/L0ca7117CADA8E8';
+    link6.classList.add('btn','btn-primary', 'btn-lg');
+    link6.setAttribute('role', 'button');
+    link6.setAttribute('data-tooltip', '$100.000');
+    link6.setAttribute('target', '_blank');
+    link6.setAttribute('data-tooltip-location', 'right');
+    r6.appendChild(condi6);
+    boton6.appendChild(link6);
+    r6.appendChild(boton6);
+
+
+
+
+
+/*     const tabla2 = document.createElement('table');
     tabla2.classList.add('table', 'table-bordered', 'table-active');
     tabla2.setAttribute('style', 'border-color: blue');
 
@@ -119,10 +215,10 @@ function menuC() {
     curso5.innerHTML = '<b>Detección de Condiciones Subestándares</b>';
 
     const condi5 = document.createElement('td');
-    condi5.classList.add('align-middle');
+    condi5.classList.add('align-middle', 'text-justify');
     condi5.textContent = 'EDS. Afiliada';
     const boton5 = document.createElement('td');
-    boton5.classList.add('align-middle', 'text-center');
+    boton5.classList.add('align-middle', 'text-right');
     const link5 = document.createElement('a');
     link5.textContent = 'Pagar'
     link5.href = 'https://biz.payulatam.com/L0ca71144517DCA';
@@ -152,7 +248,7 @@ function menuC() {
     link6.setAttribute('data-tooltip-location', 'right');
     r6.appendChild(condi6);
     boton6.appendChild(link6);
-    r6.appendChild(boton6);
+    r6.appendChild(boton6); */
 
 
 
@@ -239,10 +335,17 @@ function menuC() {
 
     tabla1.appendChild(r1);
     tabla1.appendChild(r2);
-    tabla2.appendChild(r3);
+    tabla1.appendChild(s1);
+    tabla1.appendChild(r3);
+    tabla1.appendChild(r4);
+    tabla1.appendChild(s2);
+    tabla1.appendChild(r5);
+    tabla1.appendChild(r6);
+    console.log(tabla1)
+/*     tabla2.appendChild(r3);
     tabla2.appendChild(r4);
     tabla3.appendChild(r5);
-    tabla3.appendChild(r6);
+    tabla3.appendChild(r6); */
 /*     tabla.appendChild(r3);
     tabla.appendChild(r4);
     tabla.appendChild(r5);
@@ -250,10 +353,7 @@ function menuC() {
 
     resultadin.appendChild(titulo);
     resultadin.appendChild(tabla1);
-    resultadin.appendChild(s1);
-    resultadin.appendChild(tabla2);
-    resultadin.appendChild(s2);
-    resultadin.appendChild(tabla3);
+
 }
 
 function menuA() {
